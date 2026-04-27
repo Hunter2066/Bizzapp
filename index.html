@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Business App</title>
+    <title>My Business Shop</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-50 font-sans">
 
-    <nav class="bg-white p-6 shadow-md">
+    <nav class="bg-white p-4 shadow-sm sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-600">My Business</h1>
+            <h1 class="text-xl font-bold text-blue-600">MY SHOP</h1>
+            <div class="space-x-4 text-sm font-medium text-gray-600">
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <header class="py-16 bg-blue-600 text-white text-center px-4">
-        <h2 class="text-4xl font-bold mb-4">Welcome to Our App</h2>
-        <p class="text-lg">We provide the best solutions for your needs.</p>
+    <header class="py-12 bg-blue-600 text-white text-center px-4">
+        <h2 class="text-3xl font-bold mb-2">New Arrivals</h2>
+        <p class="opacity-90">Check out our latest products at the best prices.</p>
     </header>
 
-    <section class="py-12 px-4">
-        <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-lg">
-            <h3 class="text-xl font-bold mb-6 text-center">Contact Us</h3>
+    <section id="products" class="py-12 container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-gray-800 mb-8">Our Collection</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <form action="https://formspree.io/f/your_id" method="POST" class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" name="name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="https://via.placeholder.com/400x300?text=Product+1" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Product Name 1</h4>
+                    <p class="text-gray-500 text-sm mb-4">Brief description of the item goes here.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 font-bold text-xl">$25.00</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">Buy Now</button>
+                    </div>
                 </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" name="email" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            </div>
+
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="https://via.placeholder.com/400x300?text=Product+2" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Product Name 2</h4>
+                    <p class="text-gray-500 text-sm mb-4">Brief description of the item goes here.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 font-bold text-xl">$40.00</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">Buy Now</button>
+                    </div>
                 </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea name="message" rows="4" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+            </div>
+
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="https://via.placeholder.com/400x300?text=Product+3" alt="Product" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Product Name 3</h4>
+                    <p class="text-gray-500 text-sm mb-4">Brief description of the item goes here.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 font-bold text-xl">$15.00</span>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">Buy Now</button>
+                    </div>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
-                    Send Inquiry
-                </button>
-            </form>
-            
+            </div>
+
         </div>
     </section>
 
-    <footer class="py-8 text-center text-gray-500">
-        &copy; 2026 Your Business Name
+    <footer class="py-10 bg-white border-t text-center text-gray-400 text-xs">
+        &copy; 2026 My Business Shop. All rights reserved.
     </footer>
 
 </body>
